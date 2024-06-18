@@ -177,6 +177,6 @@ hs_err_pid*
 /.idea/libraries/
 
 # Allure
-#.allure/
-# allure-results/
-# allure-report/
+.allure/
+ allure-results/
+ allure-report/
