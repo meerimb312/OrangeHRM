@@ -23,7 +23,7 @@ public class SideMenuTest extends BaseTest {
     }
 
     @Test(
-            groups = {"Smoke", "Regression","API", "1722"},
+            groups = {"Smoke", "Regression","UI", "1722"},
             description = "TC-02 Side Menu Navigation",
             dataProvider = "sideMenuData",
             dataProviderClass = SideMenuData.class)
