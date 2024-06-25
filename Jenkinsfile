@@ -32,7 +32,7 @@ pipeline {
                     def project = params.PROJECT ?: 'OrangeHRM'
                     def testSuite = params.TEST_SUITE
                     def testType = params.TEST_TYPE
-                    def testNumber = params.TESTCASE_NUMBER
+                    def testCaseId = params.TEST_CASE_ID
 
                     def suiteFiles = []
                     if (testSuite == 'All') {
@@ -42,8 +42,8 @@ pipeline {
                     }
 
                     def groups = []
-                    if (testType == 'TC_NUMBER' && testNumber) {
-                        groups = [testNumber]
+                    if (testType == 'TEST_CASE_ID' && testCaseId) {
+                        groups = [testCaseId]
                     } else {
                         groups = [testType]
                     }
