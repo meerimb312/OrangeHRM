@@ -49,7 +49,7 @@ pipeline {
                     }
 
                     suiteFiles.each { suiteFile ->
-                        sh "mvn clean test -P ${project} -DsuiteXmlFile=${suiteFile} -Dgroups=${groups.join(',')} -DfailIfNoTests=false"
+                        sh "mvn clean test -P ${testSuite} -DsuiteXmlFile=${suiteFile} -Dgroups=${groups.join(',')} -DfailIfNoTests=false"
                     }
                 }
             }
