@@ -16,13 +16,13 @@ pipeline {
         )
         choice(
             name: "TEST_TYPE",
-            choices: ['UI', 'API', 'TC_NUMBER'],
+            choices: ['UI', 'API'],
             description: 'Choose the type of tests to run'
         )
         string(
-            name: "TESTCASE_NUMBER",
+            name: "TEST_CASE_ID",
             defaultValue: "",
-            description: 'Enter the test number to run specific test case or leave empty'
+            description: 'Enter the ID of test case, or TEST_TYPE: API,UI'
         )
     }
     stages {
